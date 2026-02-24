@@ -1,0 +1,44 @@
+[
+  {
+    "id": "evt-001",
+    "title": "Night of Worship and Wonders",
+    "dateTime": "2026-03-06T18:30:00",
+    "location": "Mega Blessing Chapel Main Auditorium",
+    "description": "An evening of worship, prophetic ministry, and prayer for healing and restoration."
+  },
+  {
+    "id": "evt-002",
+    "title": "Leadership and Mentorship Summit",
+    "dateTime": "2026-03-15T09:00:00",
+    "location": "Faith Hall, Downtown Campus",
+    "description": "A practical leadership summit for ministry leaders, workers, and emerging mentors."
+  },
+  {
+    "id": "evt-003",
+    "title": "Family Thanksgiving Celebration",
+    "dateTime": "2026-03-22T11:00:00",
+    "location": "Covenant Arena, East Wing",
+    "description": "A joyful family celebration service with testimonies, praise, and fellowship."
+  },
+  {
+    "id": "evt-004",
+    "title": "Youth Ignite Conference",
+    "dateTime": "2026-04-05T16:00:00",
+    "location": "MBCI Youth Dome",
+    "description": "A dynamic conference designed to inspire young ambassadors with truth and power."
+  },
+  {
+    "id": "evt-005",
+    "title": "Community Love Outreach",
+    "dateTime": "2026-04-12T10:00:00",
+    "location": "Riverdale Community Square",
+    "description": "Food distribution, prayer tents, and care support for local families."
+  },
+  {
+    "id": "evt-006",
+    "title": "Easter Glory Service",
+    "dateTime": "2026-04-19T09:30:00",
+    "location": "Main Sanctuary",
+    "description": "A special resurrection celebration service with worship and communion."
+  }
+]

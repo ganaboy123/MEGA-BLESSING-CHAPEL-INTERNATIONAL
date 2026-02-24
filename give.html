@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="church giving, donate online, christian generosity, tithes and offerings" />
+    <meta name="description" content="Give securely at Mega Blessing Chapel International." />
+    <link rel="canonical" href="https://megablessingchapel.org/give.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MEGA BLESSING CHAPEL INTERNATIONAL" />
+    <meta property="og:title" content="Give | MEGA BLESSING CHAPEL INTERNATIONAL" />
+    <meta property="og:description" content="Support ministry and outreach through secure online giving." />
+    <meta property="og:url" content="https://megablessingchapel.org/give.html" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Give | MEGA BLESSING CHAPEL INTERNATIONAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/entry-guard.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Go to homepage">
+          <span class="brand-mark brand-mark-logo" aria-hidden="true">
+            <img src="assets/images/logo.jpg" alt="" loading="eager" decoding="async" />
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-text brand-text-scroll">MEGA BLESSING CHAPEL INTERNATIONAL</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Toggle navigation menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="primary-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="ministries.html">Ministries</a></li>
+          <li><a class="nav-link" href="sermons.html">Sermons</a></li>
+          <li><a class="nav-link" href="events.html">Events</a></li>
+          <li><a class="nav-link active" href="give.html">Give</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero page-hero-give">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Give</span>
+          </nav>
+          <h1>Give Online</h1>
+          <p>Partner with us to impact lives through generous giving.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="donation-shell reveal">
+            <div class="donation-panel">
+              <h2>Select Amount</h2>
+              <div class="amount-grid" data-amount-grid>
+                <button type="button" class="amount-chip" data-amount="25">$25</button>
+                <button type="button" class="amount-chip" data-amount="50">$50</button>
+                <button type="button" class="amount-chip is-active" data-amount="100">$100</button>
+                <button type="button" class="amount-chip" data-amount="250">$250</button>
+              </div>
+              <label for="custom-amount">Custom Amount</label>
+              <input id="custom-amount" type="number" min="1" step="1" placeholder="Enter custom amount" data-custom-amount />
+            </div>
+
+            <form class="payment-panel" data-give-form novalidate>
+              <h2>Payment Details</h2>
+              <p class="secure-note">Secure frontend payment form (demo UI only)</p>
+              <label for="giver-name">Full Name</label>
+              <input id="giver-name" name="giverName" type="text" required />
+
+              <label for="giver-email">Email</label>
+              <input id="giver-email" name="giverEmail" type="email" required />
+
+              <label for="card-number">Card Number</label>
+              <input id="card-number" name="cardNumber" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" required />
+
+              <div class="field-row">
+                <div>
+                  <label for="exp-date">Expiry</label>
+                  <input id="exp-date" name="expiry" type="text" placeholder="MM/YY" required />
+                </div>
+                <div>
+                  <label for="cvv">CVV</label>
+                  <input id="cvv" name="cvv" type="text" placeholder="123" required />
+                </div>
+              </div>
+
+              <p class="total-line">Total: <strong data-give-total>$100</strong></p>
+              <button type="submit" class="btn btn-primary">Complete Donation</button>
+              <p class="form-feedback" data-give-feedback aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-block">
+          <div class="footer-brand-row">
+            <img src="assets/images/logo.png" alt="Mega Blessing Chapel International logo" class="footer-brand-logo" />
+            <p class="footer-brand">MEGA BLESSING CHAPEL INTERNATIONAL</p>
+          </div>
+          <p class="footer-copy">A place to believe, belong, and become.</p>
+          <p class="footer-copy">145 Kingdom Way, Riverdale, Atlanta, GA 30349</p>
+          <p class="footer-copy">Phone: +1 (404) 555-0198</p>
+          <p class="footer-copy">Email: info@megablessingchapel.org</p>
+        </div>
+
+        <div class="footer-block">
+          <p class="footer-title">Connect</p>
+          <div class="social-list" aria-label="Social media links">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.9V12h2.9V9.8c0-2.9 1.7-4.5 4.3-4.5 1.2 0 2.5.2 2.5.2v2.8h-1.4c-1.4 0-1.8.9-1.8 1.7V12h3.1l-.5 2.9h-2.6v7A10 10 0 0 0 22 12z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm10.5 1.4a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.8zM9.6 15.5v-7L16 12l-6.4 3.5z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.8L6.1 22H3l7.2-8.2L.8 2h6.4l4.5 6.3L18.9 2zm-1.1 18h1.7L6.2 3.9H4.4L17.8 20z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-block">
+          <p class="footer-title">Newsletter</p>
+          <form class="newsletter-form" action="#" method="post">
+            <label class="sr-only" for="give-newsletter-email">Email address</label>
+            <input id="give-newsletter-email" name="email" type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
+

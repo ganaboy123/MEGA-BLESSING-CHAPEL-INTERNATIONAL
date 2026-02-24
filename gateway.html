@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Welcome gateway for Mega Blessing Chapel International." />
+    <title>Gateway | MEGA BLESSING CHAPEL INTERNATIONAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/gateway.css" />
+  </head>
+  <body class="gateway-lock">
+    <div class="gateway-preloader" data-preloader role="status" aria-live="polite" aria-label="Loading gateway">
+      <span class="gateway-spinner" aria-hidden="true"></span>
+      <p>Preparing worship experience...</p>
+    </div>
+
+    <main class="gateway" data-gateway>
+      <video class="gateway-video" autoplay muted loop playsinline preload="metadata" data-bg-video aria-hidden="true">
+        <source src="assets/videos/scripture.mp4" type="video/mp4" />
+      </video>
+
+      <div class="gateway-overlay" aria-hidden="true"></div>
+      <div class="gateway-particles" data-particles aria-hidden="true"></div>
+
+      <button class="audio-toggle" type="button" data-audio-toggle aria-label="Enable ambient worship audio">
+        <span data-audio-icon aria-hidden="true">🔇</span>
+      </button>
+      <audio class="gateway-audio" data-audio loop muted preload="metadata">
+        <source src="assets/videos/scripture.mp4" type="video/mp4" />
+      </audio>
+
+      <section class="gateway-content" data-parallax-content>
+        <img src="assets/images/logo.png" alt="Mega Blessing Chapel International logo" class="gateway-logo" />
+
+        <h1 class="gateway-title">
+          Welcome to <span>Mega Blessing Chapel International</span>
+        </h1>
+        <p class="gateway-subtitle">
+          A Place of <strong>Glory</strong>, <strong>Power</strong> and <strong>Divine Increase</strong>
+        </p>
+
+        <div class="scripture-rotator" aria-live="polite">
+          <p class="scripture-text" data-scripture-text></p>
+          <p class="scripture-ref" data-scripture-ref></p>
+        </div>
+
+        <button class="enter-button" type="button" data-enter-button>Enter Church</button>
+      </section>
+    </main>
+
+    <script type="module" src="assets/js/gateway.js"></script>
+  </body>
+</html>

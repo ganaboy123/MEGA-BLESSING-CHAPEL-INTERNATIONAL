@@ -1,0 +1,112 @@
+[
+  {
+    "id": "srm-001",
+    "title": "Overflowing Grace for Daily Victory",
+    "pastor": "Pastor Daniel Obasi",
+    "date": "2026-02-16",
+    "category": "grace",
+    "summary": "Discover how grace empowers holy living, confidence, and daily breakthrough.",
+    "thumbnail": "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    "duration": "42:18"
+  },
+  {
+    "id": "srm-002",
+    "title": "Faith That Works Through Love",
+    "pastor": "Pastor Ruth Adeyemi",
+    "date": "2026-02-09",
+    "category": "faith",
+    "summary": "Build active faith rooted in compassion and kingdom obedience.",
+    "thumbnail": "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    "duration": "38:07"
+  },
+  {
+    "id": "srm-003",
+    "title": "Leading with Kingdom Conviction",
+    "pastor": "Pastor Emmanuel Grant",
+    "date": "2026-02-02",
+    "category": "leadership",
+    "summary": "Biblical leadership principles for influence, integrity, and impact.",
+    "thumbnail": "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    "duration": "45:12"
+  },
+  {
+    "id": "srm-004",
+    "title": "The Language of Mercy",
+    "pastor": "Pastor Daniel Obasi",
+    "date": "2026-01-26",
+    "category": "grace",
+    "summary": "Understand how mercy restores broken places and renews hope.",
+    "thumbnail": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    "duration": "36:49"
+  },
+  {
+    "id": "srm-005",
+    "title": "Walking by Faith and Not by Sight",
+    "pastor": "Pastor Ruth Adeyemi",
+    "date": "2026-01-19",
+    "category": "faith",
+    "summary": "Practical guidance for trusting God through uncertain seasons.",
+    "thumbnail": "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+    "duration": "40:24"
+  },
+  {
+    "id": "srm-006",
+    "title": "Servant Leadership in Ministry",
+    "pastor": "Pastor Emmanuel Grant",
+    "date": "2026-01-12",
+    "category": "leadership",
+    "summary": "Learn to lead through humility, service, and spiritual maturity.",
+    "thumbnail": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
+    "duration": "39:55"
+  },
+  {
+    "id": "srm-007",
+    "title": "Spirit-Filled Prayer Foundations",
+    "pastor": "Pastor Daniel Obasi",
+    "date": "2026-01-05",
+    "category": "prayer",
+    "summary": "Strengthen your prayer life with biblical patterns and spiritual discipline.",
+    "thumbnail": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3",
+    "duration": "43:10"
+  },
+  {
+    "id": "srm-008",
+    "title": "Kingdom Mindset for New Seasons",
+    "pastor": "Pastor Ruth Adeyemi",
+    "date": "2025-12-29",
+    "category": "discipleship",
+    "summary": "Renew your mind for increase, purpose, and divine direction.",
+    "thumbnail": "https://images.unsplash.com/photo-1508963493744-76fce69379c0?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3",
+    "duration": "41:03"
+  },
+  {
+    "id": "srm-009",
+    "title": "The Power of Corporate Worship",
+    "pastor": "Pastor Emmanuel Grant",
+    "date": "2025-12-22",
+    "category": "worship",
+    "summary": "Why gathered worship shifts atmospheres and builds spiritual strength.",
+    "thumbnail": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3",
+    "duration": "37:16"
+  },
+  {
+    "id": "srm-010",
+    "title": "Stewarding Your Calling",
+    "pastor": "Pastor Daniel Obasi",
+    "date": "2025-12-15",
+    "category": "leadership",
+    "summary": "Identify and steward your God-given assignment with excellence.",
+    "thumbnail": "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?auto=format&fit=crop&w=1200&q=80",
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3",
+    "duration": "44:28"
+  }
+]

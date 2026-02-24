@@ -1,0 +1,19 @@
+{
+  "name": "mega-blessing-chapel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MEGA BLESSING CHAPEL INTERNATIONAL website",
+  "main": "server.js",
+  "scripts": {
+    "validate:data": "node scripts/validate-data.js",
+    "prestart": "npm run validate:data",
+    "predeploy": "npm run validate:data",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1"
+  }
+}
