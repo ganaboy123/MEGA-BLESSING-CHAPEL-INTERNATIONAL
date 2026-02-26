@@ -3422,9 +3422,9 @@ stor Profile Page Styling */
 
 .pastor-gallery-image {
   width: 100%;
-  height: 320px;
+  height: 380px;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   display: block;
 }
 
@@ -3455,11 +3455,11 @@ stor Profile Page Styling */
 
 @media (min-width: 1024px) {
   .pastor-gallery-image {
-    height: 360px;
+    height: 420px;
   }
 
   .pastor-gallery-placeholder {
-    height: 360px;
+    height: 420px;
   }
 }
 
@@ -3469,10 +3469,10 @@ stor Profile Page Styling */
   }
 
   .pastor-gallery-image {
-    height: 280px;
+    height: 350px;
   }
 
   .pastor-gallery-placeholder {
-    height: 280px;
+    height: 350px;
   }
 }
