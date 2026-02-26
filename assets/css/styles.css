@@ -3283,3 +3283,52 @@ body {
     animation: none;
   }
 }
+
+/* Pa
+stor/Prophet Image Styling */
+.pastor-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.pastor-image:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.leadership-media {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.leadership-card {
+  display: grid;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .leadership-card {
+    grid-template-columns: 400px 1fr;
+    gap: var(--space-6);
+  }
+
+  .leadership-media {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .pastor-image {
+    max-width: 100%;
+  }
+}
