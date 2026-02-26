@@ -3517,3 +3517,19 @@ stor Profile Page Styling */
     opacity: 0.65;
   }
 }
+
+/* Ministry Icon Image */
+.ministry-icon-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: var(--space-3);
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .ministry-icon-image {
+    width: 70px;
+    height: 70px;
+  }
+}
