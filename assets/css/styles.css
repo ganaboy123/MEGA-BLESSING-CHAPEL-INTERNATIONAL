@@ -3332,3 +3332,54 @@ stor/Prophet Image Styling */
     max-width: 100%;
   }
 }
+
+/* Pa
+stor Profile Page Styling */
+.pastor-bio-card {
+  display: grid;
+  gap: var(--space-5);
+  align-items: start;
+  background: var(--color-bg);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.pastor-profile-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hover);
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .pastor-bio-card {
+    grid-template-columns: 500px 1fr;
+    gap: var(--space-6);
+    align-items: center;
+  }
+
+  .pastor-profile-image {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .pastor-bio-card {
+    padding: var(--space-4);
+  }
+
+  .pastor-profile-image {
+    max-width: 100%;
+  }
+}
+
+.page-hero-pastor {
+  background: linear-gradient(135deg, rgba(198, 167, 86, 0.15), rgba(232, 217, 168, 0.25));
+}
