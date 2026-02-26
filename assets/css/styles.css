@@ -3400,3 +3400,79 @@ stor Profile Page Styling */
     max-width: 100%;
   }
 }
+
+/ * Pastor Gallery Images */ .pastor-gallery-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.pastor-gallery-card {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.pastor-gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.pastor-gallery-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.pastor-gallery-card p {
+  padding: var(--space-3) var(--space-4);
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.pastor-gallery-placeholder {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(198, 167, 86, 0.1), rgba(232, 217, 168, 0.15));
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .pastor-gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pastor-gallery-image {
+    height: 360px;
+  }
+
+  .pastor-gallery-placeholder {
+    height: 360px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pastor-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pastor-gallery-image {
+    height: 280px;
+  }
+
+  .pastor-gallery-placeholder {
+    height: 280px;
+  }
+}
