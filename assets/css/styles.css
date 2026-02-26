@@ -3476,3 +3476,42 @@ stor Profile Page Styling */
     height: 350px;
   }
 }
+
+/ * Ministry Card with Background Image */ .ministry-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.ministry-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ministry-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.ministry-card-youth .ministry-card-bg {
+  opacity: 0.12;
+  background-size: 60%;
+}
+
+@media (min-width: 768px) {
+  .ministry-card-youth .ministry-card-bg {
+    background-size: 55%;
+  }
+}
+
+@media (max-width: 767px) {
+  .ministry-card-youth .ministry-card-bg {
+    background-size: 50%;
+    opacity: 0.1;
+  }
+}
