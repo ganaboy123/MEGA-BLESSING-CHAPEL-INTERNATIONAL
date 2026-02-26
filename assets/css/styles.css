@@ -3488,9 +3488,10 @@ stor Profile Page Styling */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  opacity: 0.35;
   z-index: 0;
   pointer-events: none;
+  filter: brightness(1.1) contrast(1.2);
 }
 
 .ministry-card-content {
@@ -3499,19 +3500,20 @@ stor Profile Page Styling */
 }
 
 .ministry-card-youth .ministry-card-bg {
-  opacity: 0.12;
-  background-size: 60%;
+  opacity: 0.4;
+  background-size: 65%;
 }
 
 @media (min-width: 768px) {
   .ministry-card-youth .ministry-card-bg {
-    background-size: 55%;
+    background-size: 60%;
+    opacity: 0.45;
   }
 }
 
 @media (max-width: 767px) {
   .ministry-card-youth .ministry-card-bg {
-    background-size: 50%;
-    opacity: 0.1;
+    background-size: 55%;
+    opacity: 0.35;
   }
 }
