@@ -1132,8 +1132,29 @@ p {
 }
 
 .page-hero-pastor {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.84), rgba(248, 246, 240, 0.82)),
-    url("assets/images/about.jpg");
+  background-image: linear-gradient(rgba(20, 20, 20, 0.45), rgba(20, 20, 20, 0.55)),
+    url("../images/Prophet (10).jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.page-hero-pastor h1,
+.page-hero-pastor p {
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.page-hero-pastor .breadcrumb {
+  background: rgba(198, 167, 86, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.page-hero-pastor .breadcrumb a,
+.page-hero-pastor .breadcrumb span {
+  color: #1c1c1c;
+  font-weight: 600;
 }
 
 .breadcrumb {
@@ -3378,8 +3399,4 @@ stor Profile Page Styling */
   .pastor-profile-image {
     max-width: 100%;
   }
-}
-
-.page-hero-pastor {
-  background: linear-gradient(135deg, rgba(198, 167, 86, 0.15), rgba(232, 217, 168, 0.25));
 }
