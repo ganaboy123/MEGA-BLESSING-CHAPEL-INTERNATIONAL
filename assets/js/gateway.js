@@ -1,6 +1,6 @@
 const REDIRECT_MS = 7000;
 const VERSE_MS = 3000;
-const EXIT_MS = 720;
+const EXIT_MS = 1500;
 
 const verses = [
   { text: '"For I know the plans I have for you..."', ref: "Jeremiah 29:11" },
@@ -19,8 +19,6 @@ const rotator = q(".scripture-rotator");
 const enterButton = q("[data-enter-button]");
 const particlesWrap = q("[data-particles]");
 const audio = q("[data-audio]");
-const audioToggle = q("[data-audio-toggle]");
-const audioIcon = q("[data-audio-icon]");
 const parallaxContent = q("[data-parallax-content]");
 
 let verseIndex = 0;
@@ -33,14 +31,11 @@ const resolveTarget = () => {
   const fallback = "index.html";
   if (!nextParam) return fallback;
   const raw = decodeURIComponent(nextParam).trim();
-  if (!raw) return fallback;
-  if (/^https?:\/\//i.test(raw)) return fallback;
-  if (raw.toLowerCase().includes("gateway.html")) return fallback;
+  if (!raw || /^https?:\/\//i.test(raw) || raw.toLowerCase().includes("gateway.html")) return fallback;
   const safe = raw.replace(/^\//, "");
   if (!safe) return fallback;
   const [baseAndQuery, hashPart] = safe.split("#");
-  const hasQuery = baseAndQuery.includes("?");
-  const withFlag = baseAndQuery + (hasQuery ? "&" : "?") + "fromGateway=1";
+  const withFlag = baseAndQuery + (baseAndQuery.includes("?") ? "&" : "?") + "fromGateway=1";
   return withFlag + (hashPart ? "#" + hashPart : "");
 };
 
@@ -66,8 +61,7 @@ const rotateVerses = () => {
 };
 
 const hidePreloader = () => {
-  if (!preloader) return;
-  preloader.classList.add("is-hidden");
+  if (preloader) preloader.classList.add("is-hidden");
 };
 
 const initPreloader = () => {
@@ -86,9 +80,8 @@ const initPreloader = () => {
 
 const buildParticles = () => {
   if (!particlesWrap) return;
-  const count = 18;
   const frag = document.createDocumentFragment();
-  for (let i = 0; i < count; i += 1) {
+  for (let i = 0; i < 18; i += 1) {
     const p = document.createElement("span");
     p.className = "particle";
     p.style.left = `${Math.random() * 100}%`;
@@ -102,31 +95,72 @@ const buildParticles = () => {
   particlesWrap.appendChild(frag);
 };
 
+const fadeInAudio = (audioEl, targetVolume, duration) => {
+  let volume = 0;
+  audioEl.volume = 0;
+  const step = targetVolume / (duration / 50);
+  const fade = setInterval(() => {
+    volume += step;
+    if (volume >= targetVolume) {
+      audioEl.volume = targetVolume;
+      clearInterval(fade);
+    } else {
+      audioEl.volume = volume;
+    }
+  }, 50);
+};
+
+const fadeOutAudio = (audioEl, duration, callback) => {
+  const startVolume = audioEl.volume;
+  const step = startVolume / (duration / 50);
+  let volume = startVolume;
+  const fade = setInterval(() => {
+    volume -= step;
+    if (volume <= 0) {
+      audioEl.volume = 0;
+      clearInterval(fade);
+      if (callback) callback();
+    } else {
+      audioEl.volume = volume;
+    }
+  }, 50);
+};
+
+const initAudio = () => {
+  if (!audio || !bgVideo) return;
+
+  bgVideo.addEventListener("canplay", () => {
+    audio.play().catch(() => { });
+    setTimeout(() => {
+      audio.muted = false;
+      fadeInAudio(audio, 0.6, 2000);
+    }, 500);
+  }, { once: true });
+};
+
 const leaveGateway = () => {
   if (leaving) return;
   leaving = true;
   if (verseTimer) clearInterval(verseTimer);
   if (autoTimer) clearTimeout(autoTimer);
   gateway?.classList.add("is-leaving");
-  setTimeout(() => {
-    window.location.href = targetUrl;
-  }, EXIT_MS);
+
+  if (audio) {
+    fadeOutAudio(audio, 1500, () => {
+      audio.pause();
+      setTimeout(() => {
+        window.location.href = targetUrl;
+      }, 0);
+    });
+  } else {
+    setTimeout(() => {
+      window.location.href = targetUrl;
+    }, EXIT_MS);
+  }
 };
 
 const initAutoRedirect = () => {
   autoTimer = setTimeout(leaveGateway, REDIRECT_MS);
-};
-
-const initAudio = () => {
-  if (!audio || !audioToggle || !audioIcon) return;
-  audio.muted = true;
-  audio.play().catch(() => {});
-  audioToggle.addEventListener("click", () => {
-    audio.muted = !audio.muted;
-    audioIcon.textContent = audio.muted ? "🔇" : "🔊";
-    audioToggle.setAttribute("aria-label", audio.muted ? "Enable ambient worship audio" : "Disable ambient worship audio");
-    if (!audio.muted) audio.play().catch(() => {});
-  });
 };
 
 const initParallax = () => {
@@ -152,4 +186,4 @@ const init = () => {
   enterButton?.addEventListener("click", leaveGateway);
 };
 
-init();
+document.addEventListener("DOMContentLoaded", init);
