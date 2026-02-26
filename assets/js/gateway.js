@@ -1,6 +1,6 @@
 const REDIRECT_MS = 7000;
 const VERSE_MS = 3000;
-const EXIT_MS = 1500;
+const EXIT_MS = 300;
 
 const verses = [
   { text: '"For I know the plans I have for you..."', ref: "Jeremiah 29:11" },
@@ -102,7 +102,7 @@ const leaveGateway = () => {
   gateway?.classList.add("is-leaving");
   setTimeout(() => {
     window.location.href = targetUrl;
-  }, EXIT_MS);
+  }, 100);
 };
 
 const initAutoRedirect = () => {
