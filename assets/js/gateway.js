@@ -18,7 +18,6 @@ const scriptureRef = q("[data-scripture-ref]");
 const rotator = q(".scripture-rotator");
 const enterButton = q("[data-enter-button]");
 const particlesWrap = q("[data-particles]");
-const audio = q("[data-audio]");
 const parallaxContent = q("[data-parallax-content]");
 
 let verseIndex = 0;
@@ -95,68 +94,15 @@ const buildParticles = () => {
   particlesWrap.appendChild(frag);
 };
 
-const fadeInAudio = (audioEl, targetVolume, duration) => {
-  let volume = 0;
-  audioEl.volume = 0;
-  const step = targetVolume / (duration / 50);
-  const fade = setInterval(() => {
-    volume += step;
-    if (volume >= targetVolume) {
-      audioEl.volume = targetVolume;
-      clearInterval(fade);
-    } else {
-      audioEl.volume = volume;
-    }
-  }, 50);
-};
-
-const fadeOutAudio = (audioEl, duration, callback) => {
-  const startVolume = audioEl.volume;
-  const step = startVolume / (duration / 50);
-  let volume = startVolume;
-  const fade = setInterval(() => {
-    volume -= step;
-    if (volume <= 0) {
-      audioEl.volume = 0;
-      clearInterval(fade);
-      if (callback) callback();
-    } else {
-      audioEl.volume = volume;
-    }
-  }, 50);
-};
-
-const initAudio = () => {
-  if (!audio || !bgVideo) return;
-
-  bgVideo.addEventListener("canplay", () => {
-    audio.play().catch(() => { });
-    setTimeout(() => {
-      audio.muted = false;
-      fadeInAudio(audio, 0.6, 2000);
-    }, 500);
-  }, { once: true });
-};
-
 const leaveGateway = () => {
   if (leaving) return;
   leaving = true;
   if (verseTimer) clearInterval(verseTimer);
   if (autoTimer) clearTimeout(autoTimer);
   gateway?.classList.add("is-leaving");
-
-  if (audio) {
-    fadeOutAudio(audio, 1500, () => {
-      audio.pause();
-      setTimeout(() => {
-        window.location.href = targetUrl;
-      }, 0);
-    });
-  } else {
-    setTimeout(() => {
-      window.location.href = targetUrl;
-    }, EXIT_MS);
-  }
+  setTimeout(() => {
+    window.location.href = targetUrl;
+  }, EXIT_MS);
 };
 
 const initAutoRedirect = () => {
@@ -180,7 +126,6 @@ const init = () => {
   buildParticles();
   initPreloader();
   rotateVerses();
-  initAudio();
   initParallax();
   initAutoRedirect();
   enterButton?.addEventListener("click", leaveGateway);
