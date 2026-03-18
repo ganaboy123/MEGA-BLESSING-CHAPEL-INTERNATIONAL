@@ -3548,6 +3548,8 @@ uTube Sermon Cards */
   overflow: hidden;
   box-shadow: var(--shadow-soft);
   transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .sermon-yt-card:hover {
@@ -3571,19 +3573,24 @@ uTube Sermon Cards */
   display: block;
 }
 
-.sermon-yt-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.82);
+.sermon-yt-footer {
+  padding: var(--space-3) var(--space-4);
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 2;
+  min-height: 0;
+}
+
+.sermon-yt-footer:empty,
+.sermon-yt-footer:has([hidden]) {
+  padding: 0;
 }
 
 .sermon-watch-btn {
-  font-size: 1.1rem;
-  padding: 1rem 2rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.85rem 1.5rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--color-accent), #e8d9a8);
   color: #1c1c1c;
