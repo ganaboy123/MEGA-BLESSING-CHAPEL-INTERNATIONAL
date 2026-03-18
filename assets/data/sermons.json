@@ -7,7 +7,7 @@
     "category": "grace",
     "summary": "Discover how grace empowers holy living, confidence, and daily breakthrough.",
     "thumbnail": "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "42:18"
   },
   {
@@ -18,7 +18,7 @@
     "category": "faith",
     "summary": "Build active faith rooted in compassion and kingdom obedience.",
     "thumbnail": "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "38:07"
   },
   {
@@ -29,7 +29,7 @@
     "category": "leadership",
     "summary": "Biblical leadership principles for influence, integrity, and impact.",
     "thumbnail": "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "45:12"
   },
   {
@@ -40,7 +40,7 @@
     "category": "grace",
     "summary": "Understand how mercy restores broken places and renews hope.",
     "thumbnail": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "36:49"
   },
   {
@@ -51,7 +51,7 @@
     "category": "faith",
     "summary": "Practical guidance for trusting God through uncertain seasons.",
     "thumbnail": "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "40:24"
   },
   {
@@ -62,7 +62,7 @@
     "category": "leadership",
     "summary": "Learn to lead through humility, service, and spiritual maturity.",
     "thumbnail": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "39:55"
   },
   {
@@ -73,7 +73,7 @@
     "category": "prayer",
     "summary": "Strengthen your prayer life with biblical patterns and spiritual discipline.",
     "thumbnail": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "43:10"
   },
   {
@@ -84,7 +84,7 @@
     "category": "discipleship",
     "summary": "Renew your mind for increase, purpose, and divine direction.",
     "thumbnail": "https://images.unsplash.com/photo-1508963493744-76fce69379c0?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "41:03"
   },
   {
@@ -95,7 +95,7 @@
     "category": "worship",
     "summary": "Why gathered worship shifts atmospheres and builds spiritual strength.",
     "thumbnail": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "37:16"
   },
   {
@@ -106,7 +106,8 @@
     "category": "leadership",
     "summary": "Identify and steward your God-given assignment with excellence.",
     "thumbnail": "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?auto=format&fit=crop&w=1200&q=80",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3",
+    "audio": "assets/audio/sermon-sample.mp3",
     "duration": "44:28"
   }
 ]
+
