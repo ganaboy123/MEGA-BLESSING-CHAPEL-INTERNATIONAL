@@ -3648,3 +3648,171 @@ n Thumbnail Card (for embed-disabled videos) */
 .sermon-thumb-link:hover .sermon-thumb-play {
   background: rgba(198, 167, 86, 0.55);
 }
+
+/* ====
+========================================
+   GLOBAL RESPONSIVE REVIEW FIXES
+   ============================================ */
+
+/* Ensure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal overflow on all pages */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Leadership card responsive fix */
+@media (max-width: 767px) {
+  .leadership-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pastor-image {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+  }
+
+  .leadership-read-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Pastor bio card responsive fix */
+@media (max-width: 767px) {
+  .pastor-bio-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pastor-profile-image {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Hero image responsive fix */
+.hero-image-wrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Sermon grid responsive fix */
+@media (max-width: 480px) {
+  .sermon-grid-yt {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .sermon-watch-btn {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Ministry icon image responsive fix */
+@media (max-width: 480px) {
+  .ministry-icon-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Footer responsive fix */
+@media (max-width: 767px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .footer-block {
+    text-align: center;
+  }
+
+  .social-list {
+    justify-content: center;
+  }
+
+  .footer-brand-row {
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
+/* Pastor gallery grid responsive fix */
+@media (max-width: 480px) {
+  .pastor-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Section head responsive fix */
+@media (max-width: 767px) {
+  .section-head {
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    word-break: break-word;
+  }
+}
+
+/* Breadcrumb responsive fix */
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+}
+
+/* Page hero responsive fix */
+@media (max-width: 767px) {
+  .page-hero {
+    padding: calc(var(--header-h) + var(--space-4)) 0 var(--space-4);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+  }
+}
+
+/* Card grid responsive fix */
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* About preview responsive fix */
+@media (max-width: 767px) {
+  .about-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .about-preview-media img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+  }
+}
